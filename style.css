@@ -1,0 +1,171 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.space-top {
+    margin-top: 5.3em;
+}
+
+.space-y {
+    padding: 5em 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bg-light {
+    background-color: #EEF1FB !important;
+}
+
+.text-blue {
+    color: #094781;
+}
+
+.bg-blue {
+    background: #094781;
+}
+
+.bg-megenta {
+    background: #881798;
+}
+
+.bg-maroon {
+    background: #E74C3C;
+}
+
+.fw-xbold {
+    font-weight: 800;
+}
+
+.btn-success {
+    color: #000;
+    background-color: #9BC93B;
+    border-color: #9BC93B;
+    font-weight: 500;
+}
+
+.feature-list h5.card-title {
+    font-size: 1.1em;
+}
+
+.icon-view i.demo-icon {
+    font-size: 8em;
+    line-height: 30px;
+}
+
+.feature {
+    background-image: url('assets/lines.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footnav li {
+    background: transparent;
+    color: #fff;
+    border: 0;
+    padding-left: 0;
+}
+
+.owl-nav {
+    text-align: center;
+}
+
+.owl-carousel .owl-nav button {
+    background: #fff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.Offer .col-lg-5:first-child {
+    border-right: 1px solid #fff;
+}
+
+.footnav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footnav h5 {
+    position: relative;
+}
+
+.footnav h5:before {
+    content: '';
+    width: 55%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+}
+
+.social-icon {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 12px;
+}
+
+.social-icon a {
+    color: #094881;
+    font-size: 26px;
+}
+
+#myCarousel .carousel-item {
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(assets/Hero.jpg);
+    background-repeat: no-repeat;
+}
+
+div#carouselSpot {
+    height: 40vh;
+}
+
+.feature-list .col:first-child .card {
+    background: #10893E;
+    color: #fff;
+}
+
+.feature-list .col:nth-child(2) .card {
+    background: #094781;
+    color: #fff;
+}
+
+.feature-list .col:nth-child(3) .card {
+    background: #E74C3C;
+    color: #fff;
+}
+
+.feature-list .col:nth-child(4) .card {
+    background: #F7630C;
+    color: #fff;
+}
+
+.feature-list .col:nth-child(5) .card {
+    background: #881798;
+    color: #fff;
+}
+
+.feature-list .col:nth-child(6) .card {
+    background: #0078D7;
+    color: #fff;
+}
+
+.testimonial {}
+
+.UserImg img {
+    width: 55px !important;
+}
+
+.owl-stage {
+    margin-bottom: 2em;
+}
