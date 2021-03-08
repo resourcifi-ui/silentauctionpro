@@ -19,7 +19,9 @@ body {
     background-color: #EEF1FB !important;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active {
     color: #fff;
     background-color: #094881;
     border-color: #094881;
@@ -45,7 +47,9 @@ body {
     font-weight: 800;
 }
 
-.btn-success {
+.btn-success,
+.btn-success:hover,
+.btn-success:active {
     color: #000;
     background-color: #9BC93B;
     border-color: #9BC93B;
@@ -66,6 +70,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.feature-list .col .card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
 }
 
 .footnav li {
@@ -173,9 +181,9 @@ div#carouselSpot {
     background: url('assets/circle-r.svg');
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: right;
+    background-position-x: 93em;
     content: '';
-    right: -20em;
+    right: 0;
     position: absolute;
     height: 100%;
     top: 0;
@@ -267,6 +275,10 @@ div#carouselSpot {
         border-bottom: 1px solid #fff;
         padding-bottom: 2em;
         margin-bottom: 2em;
+    }
+    .spot::before {
+        background-position-y: 21em;
+        background-position-x: 20em;
     }
 }
 
