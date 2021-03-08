@@ -241,7 +241,7 @@
         </section>
 
 
-        <section class="spot bg-maroon space-y">
+        <section class="spot bg-blue space-y position-relative">
             <div id="carouselSpot" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselSpot" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -313,8 +313,39 @@
                     </button>
             </div>
         </section>
+        <!--  -->
+        <!--  -->
+        <section class="Offer space-y bg-light position-relative">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card shadow">
+                            <div class="card-body py-5">
+                                <p class="text-blue fw-bold">Have some questions about what’s possible or want to see how we can customize our solution for your event?</p>
+                                <a href="#" class="btn btn-primary">Try it now</a>
+                            </div>
+                        </div>
 
-        <section class="testimonial py-5 bg-light">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card shadow">
+                            <div class="card-body py-5">
+                                <p class="text-blue fw-bold">Or, maybe you’re ready to jump in with both feet? Don’t worry, we’re here to catch you. </p>
+                                <a href="#" class="btn btn-primary">Let’s get started!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center mt-5">
+                        <a href="#" class="btn btn-lg btn-success"><img src="assets/icon/chat.svg" alt="talk" width="25"> Talk to a Coach</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+
+        <section class="testimonial py-5 bg-white position-relative">
             <div class="container">
                 <!--  -->
                 <div class="row">
@@ -425,22 +456,6 @@
                 </div>
             </div>
         </section>
-        <!--  -->
-        <section class="Offer space-y bg-megenta">
-            <div class="container">
-                <div class="row text-center justify-content-center">
-                    <div class="col-lg-5">
-                        <p class="text-white">Have some questions about what’s possible or want to see how we can customize our solution for your event?</p>
-                        <a href="#" class="btn btn-light">Learn More</a>
-                    </div>
-                    <div class="col-lg-5">
-                        <p class="text-white">Or, maybe you’re ready to jump in with both feet? Don’t worry, we’re here to catch you. </p>
-                        <a href="#" class="btn btn-light">Let’s go</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  -->
 
         <!-- FOOTER -->
         <footer class="pt-5 bg-blue ">
@@ -514,11 +529,6 @@
                 </div>
             </div>
         </footer>
-        <!-- <section class="bg-blue">
-            <div class="container">
-
-            </div>
-        </section> -->
 
     </main>
 
@@ -534,8 +544,9 @@
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
+            items: 2,
             loop: true,
-            margin: 20,
+            margin: 10,
             autoplay: true,
             autoplayTimeout: 1000,
             autoplayHoverPause: true,
@@ -543,16 +554,19 @@
             responsive: {
                 0: {
                     items: 1,
-                    nav: true
+                    nav: true,
+                    loop: true
                 },
                 600: {
                     items: 2,
-                    nav: false
+                    nav: false,
+                    loop: true
                 },
                 1000: {
                     items: 2,
                     nav: true,
-                    loop: false
+                    loop: false,
+                    loop: true
                 }
             }
         });

@@ -19,6 +19,12 @@ body {
     background-color: #EEF1FB !important;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #094881;
+    border-color: #094881;
+}
+
 .text-blue {
     color: #094781;
 }
@@ -122,7 +128,7 @@ body {
     height: 80vh;
     background-size: cover;
     background-position: center center;
-    background-image: url(assets/Hero.jpg);
+    background-image: url(assets/Hero-2.jpg);
     background-repeat: no-repeat;
 }
 
@@ -130,37 +136,94 @@ div#carouselSpot {
     height: 40vh;
 }
 
-.feature-list .col:first-child .card {
-    background: #10893E;
-    color: #fff;
+.feature-list .col:nth-child(odd) .card {
+    border: 3px solid #10893E;
+    border-radius: 18px;
 }
 
-.feature-list .col:nth-child(2) .card {
-    background: #094781;
-    color: #fff;
+.feature-list .col:nth-child(odd) .card .icon-view,
+.feature-list .col:nth-child(odd) .card .card-title {
+    color: #10893E;
 }
 
-.feature-list .col:nth-child(3) .card {
-    background: #E74C3C;
-    color: #fff;
+.feature-list .col:nth-child(even) .card {
+    border: 3px solid #094781;
+    border-radius: 18px;
 }
 
-.feature-list .col:nth-child(4) .card {
-    background: #F7630C;
-    color: #fff;
+.feature-list .col:nth-child(even) .card .icon-view,
+.feature-list .col:nth-child(even) .card .card-title {
+    color: #094781;
 }
 
-.feature-list .col:nth-child(5) .card {
-    background: #881798;
-    color: #fff;
+.spot::after {
+    background: url('assets/circle-l.svg');
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: left;
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
 }
 
-.feature-list .col:nth-child(6) .card {
-    background: #0078D7;
-    color: #fff;
+.spot::before {
+    background: url('assets/circle-r.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    content: '';
+    right: -20em;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
 }
 
-.testimonial {}
+.Offer {
+    background: url('assets/bg-wave.png');
+    background-position: bottom;
+    background-position-y: 23em;
+}
+
+.Offer .card {
+    border: 3px solid #094881;
+    border-radius: 14px;
+}
+
+.testimonial::after {
+    background-image: url('assets/lines-right-t.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-position-x: 69em;
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.testimonial::before {
+    background-image: url(assets/lines-left-t.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-position-x: -123%;
+    background-position-y: 120px;
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.testimonial .owl-carousel .owl-item .card {
+    margin: 0 20px;
+}
 
 .UserImg img {
     width: 55px !important;
@@ -168,6 +231,16 @@ div#carouselSpot {
 
 .owl-stage {
     margin-bottom: 2em;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    border: 3px solid #094881 !important;
+    background: #fff !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background: #094881 !important;
+    color: #fff;
 }
 
 
