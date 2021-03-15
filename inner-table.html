@@ -80,81 +80,109 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white py-lg-4 shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/Logo.png" alt=""></a>
-            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+    <div class="fixed-top">
+        <section class="py-2 bg-blue d-none d-sm-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-logged d-flex justify-content-between text-center">
+                            <div class="flex-fill text-white"><span class="fw-bold">Group:</span> 1 Demo Group </div>
+                            <div class="flex-fill text-white"><span class="fw-bold">Event Name:</span> Reach For the Stars Auction</div>
+                            <div class="flex-fill text-white"><span class="fw-bold">Event Ends: </span>Tue, Jun 15, 2021</div>
+                            <div class="flex-fill text-white"><span class="fw-bold">Days:</span> 92</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-md navbar-light bg-white py-lg-4 shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/Logo.png" alt=""></a>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="navbar-collapse offcanvas-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">My Home Page</a></li>
-                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Join a Group</a></li>
-                            <li><a class="dropdown-item" href="#">Create a Group</a></li>
-                        </ul>
-                    </li>
-                    <!--  -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Group</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">My Group Members</a></li>
-                            <li><a class="dropdown-item" href="#">Add / Edit / Search Contacts</a></li>
-                            <li><a class="dropdown-item" href="#">Show All Contacts</a></li>
-                            <li><a class="dropdown-item" href="#">Switch Groups</a></li>
-                        </ul>
-                    </li>
-                    <!--  -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Donations</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">My Donations</a></li>
-                            <li><a class="dropdown-item" href="#">Add / Edit Donor</a></li>
-                            <li><a class="dropdown-item" href="#">Enter Donation</a></li>
-                            <li><a class="dropdown-item" href="#">Previous Donations By My Contacts</a></li>
-                            <li><a class="dropdown-item" href="#">Travel and Experience Consignment Items</a></li>
-                        </ul>
-                    </li>
-                    <!--  -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">My Event</a></li>
-                            <li><a class="dropdown-item" href="#">View Auction Items</a></li>
-                            <li><a class="dropdown-item" href="#">Tickets Report</a></li>
-                            <li><a class="dropdown-item" href="#">Manage Table Assignments</a></li>
-                            <li><a class="dropdown-item" href="#">Bidders Report</a></li>
-                        </ul>
-                    </li>
-                    <!--  -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Auction Admin</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">Marketing / Communications Resources</a></li>
-                            <li><a class="dropdown-item" href="#">Create and Manage</a></li>
-                            <li><a class="dropdown-item" href="#">Printed Material</a></li>
-                            <li><a class="dropdown-item" href="#">Links, Reports and Export</a></li>
-                            <li><a class="dropdown-item" href="#">Event History</a></li>
-                        </ul>
-                    </li>
-                    <!--  -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">AuctionDay™</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Help</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <button class="btn btn-success" type="submit">Sign Up / Login</button>
-                </form>
+                <div class="navbar-collapse offcanvas-collapse" id="navbarCollapse">
+                    <div class="row py-2 d-sm-none d-block">
+                        <div class="col-12 pb-1"><span class="fw-bold">Group:</span> 1 Demo Group </div>
+                        <div class="col-12 pb-1"><span class="fw-bold">Event Name:</span> Reach For the Stars Auction</div>
+                        <div class="col-12 pb-1"><span class="fw-bold">Event Ends: </span>Tue, Jun 15, 2021</div>
+                        <div class="col-12 pb-1"><span class="fw-bold">Days:</span> 92</div>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">My Home Page</a></li>
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Join a Group</a></li>
+                                <li><a class="dropdown-item" href="#">Create a Group</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Group</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">My Group Members</a></li>
+                                <li><a class="dropdown-item" href="#">Add / Edit / Search Contacts</a></li>
+                                <li><a class="dropdown-item" href="#">Show All Contacts</a></li>
+                                <li><a class="dropdown-item" href="#">Switch Groups</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Donations</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">My Donations</a></li>
+                                <li><a class="dropdown-item" href="#">Add / Edit Donor</a></li>
+                                <li><a class="dropdown-item" href="#">Enter Donation</a></li>
+                                <li><a class="dropdown-item" href="#">Previous Donations By My Contacts</a></li>
+                                <li><a class="dropdown-item" href="#">Travel and Experience Consignment Items</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">My Event</a></li>
+                                <li><a class="dropdown-item" href="#">View Auction Items</a></li>
+                                <li><a class="dropdown-item" href="#">Tickets Report</a></li>
+                                <li><a class="dropdown-item" href="#">Manage Table Assignments</a></li>
+                                <li><a class="dropdown-item" href="#">Bidders Report</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Auction Admin</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">Marketing / Communications Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Create and Manage</a></li>
+                                <li><a class="dropdown-item" href="#">Printed Material</a></li>
+                                <li><a class="dropdown-item" href="#">Links, Reports and Export</a></li>
+                                <li><a class="dropdown-item" href="#">Event History</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AuctionDay™</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                        <li class="nav-item dropdown user-drop">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="mr-2 text-gray-600" id="user_full_name">William  James</span>
+                                <img class="img-profile rounded-circle" src="http://latinconexions.4psagency.com/media-storage/users/1f7f322b-eba9-4b17-8221-6900132aef7c/photos/lmpwzw-1-60143a902c1b9.jpg" id="show_profile" width="30px">
+                            </a>
+                            <ul class="dropdown-menu end-0" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <main class="innerPages">
 
         <section class="py-5 bg-light">
