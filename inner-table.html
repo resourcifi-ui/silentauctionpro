@@ -79,8 +79,8 @@
 
 </head>
 
-<body>
-    <div class="fixed-top">
+<body class="innerLogged">
+    <div class="fixed-top loggedNav">
         <section class="py-2 bg-blue d-none d-sm-block">
             <div class="container">
                 <div class="row">
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <nav class="navbar navbar-expand-md navbar-light bg-white py-lg-4 shadow">
+        <nav class="navbar navbar-expand-md navbar-light bg-white py-lg-4">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="assets/Logo.png" alt=""></a>
                 <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
@@ -168,21 +168,35 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Help</a>
                         </li>
-                        <li class="nav-item dropdown user-drop">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="mr-2 text-gray-600" id="user_full_name">William  James</span>
-                                <img class="img-profile rounded-circle" src="http://latinconexions.4psagency.com/media-storage/users/1f7f322b-eba9-4b17-8221-6900132aef7c/photos/lmpwzw-1-60143a902c1b9.jpg" id="show_profile" width="30px">
-                            </a>
-                            <ul class="dropdown-menu end-0" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></li>
-                            </ul>
-                        </li>
                     </ul>
-
+                    <div class="d-flex">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown user-drop">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="img-profile rounded-circle me-2" src="http://latinconexions.4psagency.com/media-storage/users/1f7f322b-eba9-4b17-8221-6900132aef7c/photos/lmpwzw-1-60143a902c1b9.jpg" id="show_profile" width="30px">
+                                    <span class="mr-2 text-dark fw-bold" id="user_full_name">William  James</span>
+                                </a>
+                                <ul class="dropdown-menu end-0" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
+    <!-- Sub Nav -->
+    <div class="nav-scroller bg--body shadow-sm border-top">
+        <div class="container">
+            <nav class="nav nav-underline" aria-label="Secondary navigation">
+                <!-- Start Dynamic subNav-->
+                <a href="./showmembers.php" class="nav-link">My Group Members</a> | <a href="/search4person.php?fwd=Search" class="nav-link">Add / Edit / Search Contacts</a> | <a href="/searchresults.php?fwd=Contacts" class="nav-link">Show All Contacts</a>                | <a href="/switchgroups.php" class="nav-link">Switch Groups</a>
+                <!-- End Dynamic subNav-->
+            </nav>
+        </div>
+    </div>
+    <!-- End Sub Nav -->
     <main class="innerPages">
 
         <section class="py-5 bg-light">
